@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Fallback font for simplicity */
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient background for body */
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc); /* Gradient background for boxes */
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions for hover */
+    cursor: pointer;
+    margin: 10px; /* Add spacing between boxes */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.box:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background: linear-gradient(to bottom, #2575fc, #6a11cb); /* Reverse gradient on hover */
+}
+
+.special {
+    position: absolute;
+    bottom: 20px; /* Position 20px from the bottom */
+    right: 20px; /* Position 20px from the right */
+    background: linear-gradient(to bottom, #ff416c, #ff4b2b); /* Special gradient for the F box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow for emphasis */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+
+.special:hover {
+    transform: rotate(10deg) scale(1.1); /* Slight rotation and zoom on hover */
+    background: linear-gradient(to bottom, #ff4b2b, #ff416c); /* Reverse gradient on hover */
+}
